@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-container">
+      <h1>ROCK <br> PAPER <br> SCICCORS</h1>
+      <div class="top-box">
+        <p class="score">SCORE</p>
+        <p class="points"></p>
+      </div>
+    </div>
+
+      <div class="img">
+        <div class="triangle">
+          <img src="images/bg-triangle.svg" alt="triangel" class="triangle-img">
+        </div>
+        <div class="top-circle">
+          <div data-choice="paper" class="paper blue">
+            <img src="images/icon-paper.svg" alt="paper">
+          </div>
+          <div data-choice="scissors" class="scissors yellow">
+            <img src="images/icon-scissors.svg" alt="scissors">
+          </div>
+        </div>
+        <div class="bottom-circle">
+          <div data-choice="rock" class="rock red">
+            <img src="images/icon-rock.svg" alt="rock">
+          </div>
+        </div>
+      </div>
+      <div class="win">
+        <div class="winner">
+          <div class="user">
+            <p class="win-user">MY CHOICE</p>
+            <div class="user-choice">
+              <div class="win-paper blue">
+                <img src="images/icon-paper.svg" alt="paper">
+              </div>
+              <div class="win-scissors yellow">
+                <img src="images/icon-scissors.svg" alt="scissors">
+              </div>
+              <div class="win-rock red">
+                <img src="images/icon-rock.svg" alt="rock">
+              </div>
+            </div>
+          </div>
+          <div class="computer">
+            <p class="win-comp">COMPUTER CHOICE</p>
+            <div class="computer-choice">
+              <div class="win-paper blue">
+                <img src="images/icon-paper.svg" alt="paper">
+              </div>
+              <div class="win-scissors yellow">
+                <img src="images/icon-scissors.svg" alt="scissors">
+              </div>
+              <div class="win-rock red">
+                <img src="images/icon-rock.svg" alt="rock">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="win-cont">
+          <h2></h2>
+          <button class="again">PLAY AGAIN</button>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="rule-btn">RULES</button>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <img src="images/image-rules.svg" alt="">
+        </div>
+      </div>
+    
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
